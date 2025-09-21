@@ -2,7 +2,9 @@
 {
     internal class BankAccount
     {
-        public decimal balance;
+        private decimal balance;
+        public decimal Balance => balance;
+
         public BankAccount(decimal initialBalance = 0)
         {
             balance = initialBalance;
